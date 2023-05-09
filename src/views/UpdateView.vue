@@ -1,16 +1,18 @@
 <template>
-  <div class="q-pa-md" style="max-width: 400px">
-    <q-form @submit="onSubmit" class="q-gutter-md">
-      <q-input outlined v-model="id" label="ID" readonly />
-      <q-input outlined v-model="fname" label="Firstname" />
-      <q-input outlined v-model="lname" label="Lastname" />
-      <q-input outlined v-model="username" label="Username" />
-      <q-input outlined v-model="password" label="Password" />
-      <q-input outlined v-model="email" label="Email" />
-      <q-input outlined v-model="image" label="URL Image" />
-      <q-btn label="Update" type="submit" color="primary" />
-    </q-form>
-  </div>
+  <center>
+    <div class="q-pa-md" style="max-width: 400px">
+      <q-form @submit="onSubmit" class="q-gutter-md">
+        <q-input outlined v-model="id" label="ID" readonly />
+        <q-input outlined v-model="fname" label="Firstname" />
+        <q-input outlined v-model="lname" label="Lastname" />
+        <q-input outlined v-model="username" label="Username" />
+        <q-input outlined v-model="password" label="Password" />
+        <q-input outlined v-model="email" label="Email" />
+        <q-input outlined v-model="image" label="URL Image" />
+        <q-btn label="Update" type="submit" color="primary" />
+      </q-form>
+    </div>
+  </center>
 </template>
 
 <script setup>
@@ -43,7 +45,7 @@ const fetchData = () => {
       console.log("Error fetching user data:", error);
     });
 };
-fetchData();
+onMounted(fetchData);
 
 
 const onSubmit = () => {

@@ -11,9 +11,9 @@ import HelloWorld from "./components/HelloWorld.vue";
           VueTest
         </q-toolbar-title>
         <q-tabs align="left">
-          <q-route-tab to="/" label="Home" />
-          <q-route-tab to="/create" label="Create" />
-          <q-route-tab to="/login" label="Login" />
+          <q-route-tab to="/" label="Home"/>
+          <q-route-tab to="/create" label="Create"/>
+          <q-route-tab to="/login" label="Login"/>
         </q-tabs>
       </q-toolbar>
     </q-header>

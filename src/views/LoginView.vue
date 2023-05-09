@@ -5,7 +5,7 @@
       <form class="q-gutter-md" @submit.prevent="submitForm">
         <q-input outlined v-model="username" label="Username" type="text" />
         <q-input outlined v-model="password" label="Password" type="password" />
-        <span>Do you have an account? <router-link to="/about">Register</router-link><br></span>
+        <span>Do you have an account? <router-link to="/register">Register</router-link><br></span>
         <q-btn label="Login" type="submit" color="primary" />
       </form>
     </div>
@@ -34,6 +34,7 @@ export default {
       })
       .then(response => {
         if (response.status === 200) {
+          
           alert("Login successfully.");
           router.push('/');
         } else {

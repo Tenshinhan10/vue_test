@@ -6,7 +6,7 @@
     <q-table title="Data" :rows="rows" :columns="columns" row-key="name">
       <template v-slot:body-cell-image="props">
         <q-td :props="props">
-          <q-img :src="props.row.image"></q-img>
+          <q-img :src="props.row.image" class="userimg"></q-img>
         </q-td>
       </template>
       <template v-slot:body-cell-actions="props">
@@ -40,6 +40,13 @@ const columns = ref([
     sortable: true,
   },
   {
+    name: "email",
+    align: "left",
+    label: "email",
+    field: "email",
+    sortable: true,
+  },
+  {
     name: "username",
     align: "left",
     label: "username",
@@ -51,8 +58,7 @@ const columns = ref([
     name: "actions",
     align: "center",
     label: "actions",
-    field: "id",
-    sortable: true,
+    field: "id"
   },
 ]);
 
@@ -108,3 +114,13 @@ const onCreate = () => {
 };
 
 </script>
+
+
+<style>
+.userimg{
+  width: 50%;
+  aspect-ratio: 10/9;
+  object-fit:contain;
+  border-radius: 50%;
+}
+</style>

@@ -6,7 +6,7 @@
         <q-input outlined v-model="fname" label="Firstname" />
         <q-input outlined v-model="lname" label="Lastname" />
         <q-input outlined v-model="username" label="Username" />
-        <q-input outlined v-model="password" label="Password" />
+        <q-input outlined v-model="password" label="Password" type="password"/>
         <q-input outlined v-model="email" label="Email" />
         <q-input outlined v-model="image" label="URL Image" />
         <q-btn label="Submit" type="submit" color="primary" />
