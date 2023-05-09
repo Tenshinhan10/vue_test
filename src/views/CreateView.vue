@@ -1,15 +1,18 @@
 <template>
-  <div class="q-pa-md" style="max-width: 400px">
-    <q-form @submit="onSubmit" class="q-gutter-md">
-      <q-input outlined v-model="fname" label="Firstname" />
-      <q-input outlined v-model="lname" label="Lastname" />
-      <q-input outlined v-model="username" label="Username" />
-      <q-input outlined v-model="password" label="Password" />
-      <q-input outlined v-model="email" label="Email" />
-      <q-input outlined v-model="image" label="URL Image" />
-      <q-btn label="Submit" type="submit" color="primary" />
-    </q-form>
-  </div>
+  <center>
+    <h3>Create Form</h3>
+    <div class="q-pa-md" style="max-width: 400px">
+      <q-form @submit="onSubmit" class="q-gutter-md">
+        <q-input outlined v-model="fname" label="Firstname" />
+        <q-input outlined v-model="lname" label="Lastname" />
+        <q-input outlined v-model="username" label="Username" />
+        <q-input outlined v-model="password" label="Password" />
+        <q-input outlined v-model="email" label="Email" />
+        <q-input outlined v-model="image" label="URL Image" />
+        <q-btn label="Submit" type="submit" color="primary" />
+      </q-form>
+    </div>
+  </center>
 </template>
 
 <script setup>
